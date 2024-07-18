@@ -1,0 +1,13 @@
+{% extends 'layout/basic.html' %}
+{% block title %}
+Профиль пользователя
+{% endblock %}
+{% block content %}
+    <div class="card mb-3 border-0 nth-shadow">
+        <a class="" href="{% url 'home' %}">На главную</a>
+        <h1>Личный кабинет</h1>
+    </div>
+    <a href="{% url 'add_expense' %}"><button class="add_expense">Добавить расход</button></a>
+    <a href="{% url 'expenses'%}"><button class="expenses">Список расходов</button></a>
+<div><img src="data:image/png;base64,{{ data }}" alt="" height="780" width="900"></div>
+{% endblock %}
